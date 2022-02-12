@@ -48,8 +48,8 @@ let person = {
 
 console.log(person.name);
 
-let {name, age} = person;
-console.log(name);
+let {name, age, country} = person;
+console.log(name, country);
 
 
 let team1 = ['Erick', 'Carlos', 'Esteban', 'Luis'];
