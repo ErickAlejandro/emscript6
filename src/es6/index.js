@@ -153,17 +153,30 @@ class calculator{
 
         return this.valueA - this.valueB;
     }
+    mult(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+
+        return this.valueA * this.valueB;
+    }
+    div(valueA, valueB){
+        this.valueA = valueA;
+        this.valueB = valueB;
+
+        return valueA / valueB;
+    }
 }
 
 const calc = new calculator();
 console.log(`La suma estre los valores es: ${calc.sumar(5, 6)}
-La resta entre los valores es: ${calc.rest1(5, 1)}`);
+La resta entre los valores es: ${calc.rest1(5, 1)}
+La multiplicacion es ${calc.mult(5, 7)}
+La division es: ${calc.div(8, 2)}`);
 
 import {hello} from './module';
 hello();
 
 // GENERATORS
-
 function* helloWord(){
     if(true){
         yield 'Hellow, ';
